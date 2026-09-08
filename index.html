@@ -1,12 +1,28 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Page Metadata -->
   <title>Dershyani B. Thessaruva — Portfolio</title>
+
+  <meta name="description"
+    content="Dershyani B. Thessaruva | Intelligent Computing graduate building practical AI, data and software solutions.">
+
+  <!-- Open Graph Metadata for LinkedIn / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dershyani B. Thessaruva | Portfolio">
+  <meta property="og:description"
+    content="Intelligent Computing graduate building practical AI, data and software solutions.">
+  <meta property="og:url" content="https://dershyani.github.io/Dershyani_Portfolio/">
+  <meta property="og:site_name" content="Dershyani Thessaruva Portfolio">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
     rel="stylesheet">
@@ -190,7 +206,6 @@
       overflow: hidden;
     }
 
-    /* soft grain texture on hero */
     header.hero::before {
       content: "";
       position: absolute;
@@ -198,10 +213,13 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: radial-gradient(ellipse at 20% 40%, rgba(61, 88, 53, 0.06) 0%, transparent 60%);
+      background: radial-gradient(
+        ellipse at 20% 40%,
+        rgba(61, 88, 53, 0.06) 0%,
+        transparent 60%
+      );
       pointer-events: none;
     }
-
 
     .hero-grid {
       display: grid;
@@ -212,7 +230,6 @@
       z-index: 1;
     }
 
-    /* badge */
     .badge {
       display: inline-flex;
       align-items: center;
@@ -309,7 +326,6 @@
       color: var(--ink-dim);
     }
 
-    /* hero buttons */
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
@@ -471,7 +487,11 @@
       align-items: center;
       justify-content: center;
       color: var(--ink-dim);
-      transition: background .2s ease, color .2s ease, transform .25s var(--ease), border-color .2s ease;
+      transition:
+        background .2s ease,
+        color .2s ease,
+        transform .25s var(--ease),
+        border-color .2s ease;
     }
 
     .icon-circle:hover {
@@ -500,8 +520,6 @@
       gap: 16px;
       margin-bottom: 32px;
     }
-
-
 
     .section-head h2 {
       font-size: 1.6rem;
@@ -543,7 +561,10 @@
       border-radius: 8px;
       overflow: hidden;
       background: var(--panel);
-      transition: transform .3s var(--ease), box-shadow .3s ease, border-color .3s ease;
+      transition:
+        transform .3s var(--ease),
+        box-shadow .3s ease,
+        border-color .3s ease;
       position: relative;
     }
 
@@ -570,7 +591,7 @@
       transform: scaleX(1);
     }
 
-    /* PROJECT SCREENSHOT GALLERY */
+    /* ── project screenshot gallery ── */
     .project-thumb {
       position: relative;
       aspect-ratio: 16/10;
@@ -608,7 +629,7 @@
       background: var(--accent);
     }
 
-    /* ── CAROUSEL CONTROLS ── */
+    /* ── carousel controls ── */
     .carousel-btn {
       position: absolute;
       top: 50%;
@@ -628,7 +649,10 @@
       cursor: pointer;
       z-index: 5;
       opacity: 0.85;
-      transition: opacity .2s ease, background .2s ease, transform .2s ease;
+      transition:
+        opacity .2s ease,
+        background .2s ease,
+        transform .2s ease;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     }
 
@@ -677,7 +701,10 @@
       border-radius: 50%;
       background: rgba(255, 255, 255, 0.45);
       cursor: pointer;
-      transition: background .2s ease, transform .2s ease, width .2s ease;
+      transition:
+        background .2s ease,
+        transform .2s ease,
+        width .2s ease;
     }
 
     .dot-indicator.active {
@@ -761,7 +788,10 @@
       border: 1px solid var(--line);
       padding: 3px 8px;
       border-radius: 3px;
-      transition: background .2s ease, color .2s ease, border-color .2s ease;
+      transition:
+        background .2s ease,
+        color .2s ease,
+        border-color .2s ease;
     }
 
     .tag:hover {
@@ -825,7 +855,11 @@
       border: 1px solid var(--line);
       padding: 5px 12px;
       border-radius: 3px;
-      transition: border-color .2s ease, color .2s ease, transform .2s var(--ease), background .2s ease;
+      transition:
+        border-color .2s ease,
+        color .2s ease,
+        transform .2s var(--ease),
+        background .2s ease;
     }
 
     .skill-chip:hover {
@@ -922,7 +956,7 @@
       padding: 22px 26px;
     }
 
-    .edu-row+.edu-row {
+    .edu-row + .edu-row {
       border-top: 1px solid var(--line-2);
     }
 
@@ -1077,7 +1111,9 @@
     .reveal {
       opacity: 0;
       transform: translateY(20px);
-      transition: opacity .75s var(--ease), transform .75s var(--ease);
+      transition:
+        opacity .75s var(--ease),
+        transform .75s var(--ease);
     }
 
     .reveal.visible {
@@ -1131,7 +1167,10 @@
         opacity: 0;
         visibility: hidden;
         transform: translateY(-8px);
-        transition: opacity .25s ease, transform .3s var(--ease), visibility .25s ease;
+        transition:
+          opacity .25s ease,
+          transform .3s var(--ease),
+          visibility .25s ease;
       }
 
       .nav-links.open {
@@ -1215,16 +1254,19 @@
   </style>
 </head>
 
-
-
-
 <body>
 
   <nav>
     <div class="nav-inner">
       <a href="#top" class="nav-mark">Dershyani Thessaruva</a>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        aria-label="Toggle menu"
+        aria-expanded="false">
+        ☰
+      </button>
 
       <div class="nav-links" id="navLinks">
         <a href="#about">About</a>
@@ -1234,7 +1276,6 @@
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </div>
-
     </div>
   </nav>
 
@@ -1268,8 +1309,17 @@
 
         <div class="hero-actions">
           <a class="btn btn-primary" href="#projects">View Projects</a>
-          <a class="btn btn-ghost" href="images/Resume Dershyani.pdf" download>Download Resume</a>
-          <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+
+          <a
+            class="btn btn-ghost"
+            href="images/Resume Dershyani.pdf"
+            download>
+            Download Resume
+          </a>
+
+          <a class="btn btn-ghost" href="#contact">
+            Get in Touch
+          </a>
         </div>
 
       </div>
@@ -1277,13 +1327,18 @@
       <div class="hero-cards">
 
         <div class="hcard hcard-dark">
-          <div class="hcard-label" style="color:#b9bcb4">Currently</div>
-          <div class="hcard-main">Fresh Graduate, Intelligent Computing</div>
-          <div class="hcard-sub">Universiti Sains Malaysia · Grad Nov 2026</div>
+          <div class="hcard-label">Currently</div>
+          <div class="hcard-main">
+            Fresh Graduate, Intelligent Computing
+          </div>
+          <div class="hcard-sub">
+            Universiti Sains Malaysia · Grad Nov 2026
+          </div>
         </div>
 
         <div class="hcard hcard-outline">
           <div class="hcard-label">Core Stack</div>
+
           <div class="chip-row">
             <span class="chip">Python</span>
             <span class="chip">React</span>
@@ -1294,26 +1349,41 @@
         </div>
 
         <div class="hcard hcard-soft">
-          <div class="hcard-label" style="color:var(--accent-ink)">Elsewhere</div>
+          <div class="hcard-label">Elsewhere</div>
+
           <div class="social-row">
 
-            <a class="icon-circle" href="https://github.com/Dershyani" target="_blank" rel="noopener"
+            <a
+              class="icon-circle"
+              href="https://github.com/Dershyani"
+              target="_blank"
+              rel="noopener"
               aria-label="GitHub">
+
               <svg viewBox="0 0 24 24">
                 <path
                   d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.238 1.84 1.238 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.303-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.807 5.625-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
               </svg>
             </a>
 
-            <a class="icon-circle" href="https://www.linkedin.com/in/dershyani-thessaruva" target="_blank"
-              rel="noopener" aria-label="LinkedIn">
+            <a
+              class="icon-circle"
+              href="https://www.linkedin.com/in/dershyani-thessaruva"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn">
+
               <svg viewBox="0 0 24 24">
                 <path
                   d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
               </svg>
             </a>
 
-            <a class="icon-circle" href="mailto:dershayani@gmail.com" aria-label="Email">
+            <a
+              class="icon-circle"
+              href="mailto:dershayani@gmail.com"
+              aria-label="Email">
+
               <svg viewBox="0 0 24 24">
                 <path
                   d="M2 4h20v16H2V4zm2 2v.01L12 13l8-6.99V6H4zm16 12V8.24l-7.4 6.47a1 1 0 0 1-1.2 0L4 8.24V18h16z" />
@@ -1324,55 +1394,68 @@
         </div>
 
       </div>
-
     </div>
   </header>
 
   <section id="about" class="wrap">
+
     <div class="section-head">
       <h2><span>About</span></h2>
     </div>
+
     <p class="about-text">
-      I'm an Intelligent Computing graduate from Universiti Sains Malaysia with experience in AI/ML, data analytics,
-      full-stack development, and software support. I enjoy building practical solutions, from AI applications using RAG
-      and LLMs to data-driven systems and web applications. I also have industry experience supporting SQL-based
-      business software, troubleshooting issues, and working with clients.
+      I'm an Intelligent Computing graduate from Universiti Sains Malaysia with experience in AI/ML,
+      data analytics, full-stack development, and software support. I enjoy building practical solutions,
+      from AI applications using RAG and LLMs to data-driven systems and web applications. I also have
+      industry experience supporting SQL-based business software, troubleshooting issues, and working with clients.
     </p>
+
   </section>
 
   <section id="experience" class="wrap">
+
     <div class="section-head">
       <h2><span>Experience</span></h2>
     </div>
 
     <div class="exp-head">
+
       <div>
         <div class="exp-role">Software Support Intern</div>
         <div class="exp-org">Awesome System Solution</div>
       </div>
+
       <div class="exp-date">
         Mar 2025 — Sep 2025
       </div>
+
     </div>
 
     <ul class="exp-points">
+
       <li>
-        Led client data migrations from legacy accounting and payroll systems to SQL Account and SQL Payroll, including
-        data preparation, cleansing and validation.
+        Led client data migrations from legacy accounting and payroll systems to SQL Account and SQL Payroll,
+        including data preparation, cleansing and validation.
       </li>
+
       <li>
         Developed customised financial reports using RTM, FastReport and Delphi/Pascal scripting.
       </li>
+
       <li>
         Configured and rolled out e-invoice integration for clients in compliance with Malaysia's MyInvois mandate.
       </li>
+
       <li>
         Diagnosed and resolved software defects in SQL accounting and payroll systems to meet SLA expectations.
       </li>
+
     </ul>
+
   </section>
 
   <section id="projects" class="wrap">
+
     <div class="section-head">
       <h2><span>Featured Projects</span></h2>
     </div>
@@ -1381,27 +1464,52 @@
 
       <!-- QUIZYFY -->
       <div class="project-card">
+
         <div class="project-thumb">
+
           <div class="project-images">
-            <img src="images/quizyfy/quizyfy_1.png" alt="QuizyFy application screenshot 1" loading="lazy">
-            <img src="images/quizyfy/quizyfy_2.png" alt="QuizyFy application screenshot 2" loading="lazy">
-            <img src="images/quizyfy/quizyfy_3.png" alt="QuizyFy application screenshot 3" loading="lazy">
-            <img src="images/quizyfy/quizyfy_4.png" alt="QuizyFy application screenshot 4" loading="lazy">
+
+            <img
+              src="images/quizyfy/quizyfy_1.png"
+              alt="QuizyFy application screenshot 1"
+              loading="lazy">
+
+            <img
+              src="images/quizyfy/quizyfy_2.png"
+              alt="QuizyFy application screenshot 2"
+              loading="lazy">
+
+            <img
+              src="images/quizyfy/quizyfy_3.png"
+              alt="QuizyFy application screenshot 3"
+              loading="lazy">
+
+            <img
+              src="images/quizyfy/quizyfy_4.png"
+              alt="QuizyFy application screenshot 4"
+              loading="lazy">
+
           </div>
+
           <span class="scroll-hint">swipe ↗</span>
+
           <div class="thumb-placeholder">
             Drop in QuizyFy screenshots
           </div>
+
         </div>
 
         <div class="project-body">
+
           <div class="project-title-row">
             <div class="project-title">QuizyFy</div>
             <span class="fyp-badge">FYP</span>
           </div>
+
           <p class="project-desc">
             AI-powered quiz generation platform using RAG to create personalised MCQs from lecture materials.
           </p>
+
           <div class="tags">
             <span class="tag">Python</span>
             <span class="tag">FastAPI</span>
@@ -1411,36 +1519,74 @@
             <span class="tag">pgvector</span>
             <span class="tag">LLaMA 3.3-70B (Groq)</span>
           </div>
+
           <div class="project-links">
-            <a href="https://github.com/Dershyani/QuizyFy" target="_blank" rel="noopener">GitHub ↗</a>
-            <a href="https://youtu.be/Jq1CIY-rnvk" target="_blank" rel="noopener">Live Demo ↗</a>
+            <a
+              href="https://github.com/Dershyani/QuizyFy"
+              target="_blank"
+              rel="noopener">
+              GitHub ↗
+            </a>
+
+            <a
+              href="https://youtu.be/Jq1CIY-rnvk"
+              target="_blank"
+              rel="noopener">
+              Live Demo ↗
+            </a>
           </div>
+
         </div>
       </div>
 
       <!-- GAS LEAK -->
       <div class="project-card">
+
         <div class="project-thumb">
+
           <div class="project-images">
-            <img src="images/gas_leak/img1.png" alt="Gas Leak Detection System screenshot 1" loading="lazy">
-            <img src="images/gas_leak/img2.png" alt="Gas Leak Detection System screenshot 2" loading="lazy">
-            <img src="images/gas_leak/img3.png" alt="Gas Leak Detection System screenshot 3" loading="lazy">
-            <img src="images/gas_leak/img4.png" alt="Gas Leak Detection System screenshot 4" loading="lazy">
+
+            <img
+              src="images/gas_leak/img1.png"
+              alt="Gas Leak Detection System screenshot 1"
+              loading="lazy">
+
+            <img
+              src="images/gas_leak/img2.png"
+              alt="Gas Leak Detection System screenshot 2"
+              loading="lazy">
+
+            <img
+              src="images/gas_leak/img3.png"
+              alt="Gas Leak Detection System screenshot 3"
+              loading="lazy">
+
+            <img
+              src="images/gas_leak/img4.png"
+              alt="Gas Leak Detection System screenshot 4"
+              loading="lazy">
+
           </div>
+
           <span class="scroll-hint">swipe ↗</span>
+
           <div class="thumb-placeholder">
             Drop in Gas Leak screenshots
           </div>
+
         </div>
 
         <div class="project-body">
+
           <div class="project-title-row">
             <div class="project-title">Gas Leak Detection System</div>
           </div>
+
           <p class="project-desc">
-            IoT system with ESP32 and MQ-9 sensor for real-time gas level monitoring, threshold alerts and Blynk cloud
-            integration.
+            IoT system with ESP32 and MQ-9 sensor for real-time gas level monitoring,
+            threshold alerts and Blynk cloud integration.
           </p>
+
           <div class="tags">
             <span class="tag">C++</span>
             <span class="tag">ESP32</span>
@@ -1448,37 +1594,69 @@
             <span class="tag">Blynk</span>
             <span class="tag">C++ (Arduino)</span>
           </div>
+
           <div class="project-links">
-            <a href="https://github.com/Dershyani/Gas-Leak-Detection-System" target="_blank" rel="noopener">GitHub ↗</a>
-            <a href="https://youtube.com/shorts/5hS7g2ZqM5Y?feature=share" target="_blank" rel="noopener">Live Demo
-              ↗</a>
+
+            <a
+              href="https://github.com/Dershyani/Gas-Leak-Detection-System"
+              target="_blank"
+              rel="noopener">
+              GitHub ↗
+            </a>
+
+            <a
+              href="https://youtube.com/shorts/5hS7g2ZqM5Y?feature=share"
+              target="_blank"
+              rel="noopener">
+              Live Demo ↗
+            </a>
+
           </div>
+
         </div>
       </div>
 
       <!-- CERVICAL CANCER -->
       <div class="project-card">
+
         <div class="project-thumb">
+
           <div class="project-images">
-            <img src="images/cervical_cancer/cervical-cancer1.png" alt="Cervical Cancer Risk Prediction screenshot 1"
+
+            <img
+              src="images/cervical_cancer/cervical-cancer1.png"
+              alt="Cervical Cancer Risk Prediction screenshot 1"
               loading="lazy">
-            <img src="images/cervical_cancer/cervical-cancer2.png" alt="Cervical Cancer Risk Prediction screenshot 2"
+
+            <img
+              src="images/cervical_cancer/cervical-cancer2.png"
+              alt="Cervical Cancer Risk Prediction screenshot 2"
               loading="lazy">
+
           </div>
+
           <span class="scroll-hint">swipe ↗</span>
+
           <div class="thumb-placeholder">
             Drop in Cervical Cancer screenshots
           </div>
+
         </div>
 
         <div class="project-body">
+
           <div class="project-title-row">
-            <div class="project-title">Cervical Cancer Risk Prediction</div>
+            <div class="project-title">
+              Cervical Cancer Risk Prediction
+            </div>
           </div>
+
           <p class="project-desc">
-            ML classification pipeline on clinical data, applying feature selection and GridSearchCV to optimise KNN and
-            Decision Tree models. Reached 96% accuracy and 100% recall with the Decision Tree classifier.
+            ML classification pipeline on clinical data, applying feature selection and GridSearchCV
+            to optimise KNN and Decision Tree models. Reached 96% accuracy and 100% recall with the
+            Decision Tree classifier.
           </p>
+
           <div class="tags">
             <span class="tag">Python</span>
             <span class="tag">Pandas</span>
@@ -1486,32 +1664,54 @@
             <span class="tag">Data Visualisation</span>
             <span class="tag">Matplotlib</span>
           </div>
+
           <div class="project-links">
-            <a href="https://github.com/Dershyani/Cervical-Cancer-Risk-Prediction" target="_blank" rel="noopener">GitHub
-              ↗</a>
+
+            <a
+              href="https://github.com/Dershyani/Cervical-Cancer-Risk-Prediction"
+              target="_blank"
+              rel="noopener">
+              GitHub ↗
+            </a>
+
           </div>
+
         </div>
       </div>
 
       <!-- DFA STOP WORD -->
       <div class="project-card">
+
         <div class="project-thumb">
+
           <div class="project-images">
-            <img src="images/dfa-stopword.png" alt="DFA-Based Stop Word Recognition System screenshot" loading="lazy">
+
+            <img
+              src="images/dfa-stopword.png"
+              alt="DFA-Based Stop Word Recognition System screenshot"
+              loading="lazy">
+
           </div>
+
           <div class="thumb-placeholder">
             Drop in dfa-stopword.png
           </div>
+
         </div>
 
         <div class="project-body">
+
           <div class="project-title-row">
-            <div class="project-title">DFA-Based Stop Word Recognition System</div>
+            <div class="project-title">
+              DFA-Based Stop Word Recognition System
+            </div>
           </div>
+
           <p class="project-desc">
-            Implementation of a Deterministic Finite Automaton (DFA) for identifying and removing stop words from text
-            data.
+            Implementation of a Deterministic Finite Automaton (DFA) for identifying
+            and removing stop words from text data.
           </p>
+
           <div class="tags">
             <span class="tag">Python</span>
             <span class="tag">Flask</span>
@@ -1519,46 +1719,95 @@
             <span class="tag">CSS</span>
             <span class="tag">Jinja2</span>
           </div>
+
           <div class="project-links">
-            <a href="https://github.com/Dershyani/DFA-Based-Stop-Word-Recognition-System" target="_blank"
-              rel="noopener">GitHub ↗</a>
+
+            <a
+              href="https://github.com/Dershyani/DFA-Based-Stop-Word-Recognition-System"
+              target="_blank"
+              rel="noopener">
+              GitHub ↗
+            </a>
+
           </div>
+
         </div>
       </div>
 
       <!-- REPILL -->
       <div class="project-card">
+
         <div class="project-thumb">
+
           <div class="project-images">
-            <img src="images/RePill/RePill1.png" alt="RePill application screenshot 1" loading="lazy">
-            <img src="images/RePill/RePill2.png" alt="RePill application screenshot 2" loading="lazy">
-            <img src="images/RePill/RePill3.png" alt="RePill application screenshot 3" loading="lazy">
-            <img src="images/RePill/RePill4.png" alt="RePill application screenshot 4" loading="lazy">
+
+            <img
+              src="images/RePill/RePill1.png"
+              alt="RePill application screenshot 1"
+              loading="lazy">
+
+            <img
+              src="images/RePill/RePill2.png"
+              alt="RePill application screenshot 2"
+              loading="lazy">
+
+            <img
+              src="images/RePill/RePill3.png"
+              alt="RePill application screenshot 3"
+              loading="lazy">
+
+            <img
+              src="images/RePill/RePill4.png"
+              alt="RePill application screenshot 4"
+              loading="lazy">
+
           </div>
+
           <span class="scroll-hint">swipe ↗</span>
+
           <div class="thumb-placeholder">
             Drop in RePill screenshots
           </div>
+
         </div>
 
         <div class="project-body">
+
           <div class="project-title-row">
             <div class="project-title">RePill</div>
           </div>
+
           <p class="project-desc">
-            Mobile healthcare app that simplifies medication refill management, with role-based access for patients and
-            providers covering prescriptions, refill requests, medical records and inventory.
+            Mobile healthcare app that simplifies medication refill management,
+            with role-based access for patients and providers covering prescriptions,
+            refill requests, medical records and inventory.
           </p>
+
           <div class="tags">
             <span class="tag">React Native</span>
             <span class="tag">MySQL</span>
             <span class="tag">JavaScript</span>
             <span class="tag">Node.js</span>
           </div>
+
           <div class="project-links">
-            <a href="https://github.com/Dershyani/RePill-App" target="_blank" rel="noopener">GitHub ↗</a>
-            <a href="https://www.youtube.com/watch?v=1qr912B6M7I" target="_blank" rel="noopener">Live Demo ↗</a>
+
+            <a
+              href="https://github.com/Dershyani/RePill-App"
+              target="_blank"
+              rel="noopener">
+              GitHub ↗
+            </a>
+
+            <a
+              href="https://www.youtube.com/watch?v=1qr912B6M7I"
+              target="_blank"
+              rel="noopener">
+              Live Demo ↗
+            </a>
+
           </div>
+
         </div>
       </div>
 
@@ -1566,13 +1815,17 @@
   </section>
 
   <section id="skills" class="wrap">
+
     <div class="section-head">
       <h2><span>Skills</span></h2>
     </div>
 
     <div class="skills-grid">
+
       <div class="skill-group">
+
         <h3>Programming Languages</h3>
+
         <div class="skill-chips">
           <span class="skill-chip">Python</span>
           <span class="skill-chip">C++</span>
@@ -1580,10 +1833,13 @@
           <span class="skill-chip">JavaScript</span>
           <span class="skill-chip">SQL</span>
         </div>
+
       </div>
 
       <div class="skill-group">
+
         <h3>AI &amp; Data</h3>
+
         <div class="skill-chips">
           <span class="skill-chip">RAG</span>
           <span class="skill-chip">LangChain</span>
@@ -1592,10 +1848,13 @@
           <span class="skill-chip">Pandas</span>
           <span class="skill-chip">scikit-learn</span>
         </div>
+
       </div>
 
       <div class="skill-group">
+
         <h3>Frontend &amp; Backend</h3>
+
         <div class="skill-chips">
           <span class="skill-chip">React</span>
           <span class="skill-chip">FastAPI</span>
@@ -1603,10 +1862,13 @@
           <span class="skill-chip">Node.js</span>
           <span class="skill-chip">HTML/CSS</span>
         </div>
+
       </div>
 
       <div class="skill-group">
+
         <h3>Database &amp; Tools</h3>
+
         <div class="skill-chips">
           <span class="skill-chip">Supabase</span>
           <span class="skill-chip">Figma</span>
@@ -1618,11 +1880,14 @@
           <span class="skill-chip">MS Office</span>
           <span class="skill-chip">Blender</span>
         </div>
+
       </div>
+
     </div>
   </section>
 
   <section id="education" class="wrap">
+
     <div class="section-head">
       <h2><span>Education</span></h2>
     </div>
@@ -1630,79 +1895,135 @@
     <div class="edu-card">
 
       <div class="edu-row">
+
         <div>
           <div class="edu-degree">
             Bachelor of Computer Science (Intelligent Computing)
           </div>
+
           <div class="edu-school">
             Universiti Sains Malaysia
           </div>
         </div>
+
         <div class="edu-meta">
           <span class="edu-cgpa">CGPA: 3.39</span><br>
           Oct 2022 – Jul 2026
         </div>
+
       </div>
 
       <div class="edu-row">
+
         <div>
           <div class="edu-degree">
             Matriculation Certificate (Computer Science)
           </div>
+
           <div class="edu-school">
             Johor Matriculation College
           </div>
         </div>
+
         <div class="edu-meta">
           <span class="edu-cgpa">CGPA: 4.00</span><br>
           Jul 2021 – May 2022
         </div>
+
       </div>
 
     </div>
   </section>
 
   <section id="resume" class="wrap">
+
     <div class="resume-box">
+
       <div>
-        <div class="project-title" style="font-size:1.1rem;">
+
+        <div
+          class="project-title"
+          style="font-size:1.1rem;">
           Want to know more?
         </div>
+
         <p>
           Download my resume for a complete overview of my skills, experience and projects.
         </p>
+
       </div>
-      <a class="btn btn-primary" href="Resume_Dershyani.pdf" download>
+
+      <a
+        class="btn btn-primary"
+        href="images/Resume Dershyani.pdf"
+        download>
         Download Resume
       </a>
+
     </div>
+
   </section>
 
-  <section id="contact" class="wrap" style="border-bottom:none;">
+  <section
+    id="contact"
+    class="wrap"
+    style="border-bottom:none;">
+
     <div class="section-head">
       <h2><span>Let's Connect</span></h2>
     </div>
+
     <p class="about-text">
+
       Open to full-time opportunities in AI, Data and Software Development.<br>
-      <span style="font-size: 0.9rem; color: var(--muted);">Based in Malaysia · Open to opportunities in Kuala Lumpur, Johor Bahru &amp; Singapore
+
+      <span
+        style="font-size: 0.9rem; color: var(--muted);">
+        Based in Malaysia · Open to opportunities in Kuala Lumpur, Johor Bahru &amp; Singapore
       </span>
+
     </p>
 
     <div class="contact-links">
+
       <div class="contact-row">
+
         <span class="label">Email</span>
-        <a href="mailto:dershayani@gmail.com">dershayani@gmail.com</a>
+
+        <a href="mailto:dershayani@gmail.com">
+          dershayani@gmail.com
+        </a>
+
       </div>
+
       <div class="contact-row">
+
         <span class="label">LinkedIn</span>
-        <a href="https://www.linkedin.com/in/dershyani-thessaruva" target="_blank"
-          rel="noopener">linkedin.com/in/dershyani-thessaruva</a>
+
+        <a
+          href="https://www.linkedin.com/in/dershyani-thessaruva"
+          target="_blank"
+          rel="noopener">
+          linkedin.com/in/dershyani-thessaruva
+        </a>
+
       </div>
+
       <div class="contact-row">
+
         <span class="label">GitHub</span>
-        <a href="https://github.com/Dershyani" target="_blank" rel="noopener">github.com/Dershyani</a>
+
+        <a
+          href="https://github.com/Dershyani"
+          target="_blank"
+          rel="noopener">
+          github.com/Dershyani
+        </a>
+
       </div>
+
     </div>
+
   </section>
 
   <footer>
@@ -1710,133 +2031,329 @@
   </footer>
 
   <script>
+
     const nav = document.querySelector('nav');
     const navToggle = document.getElementById('navToggle');
     const navLinks = document.getElementById('navLinks');
-    const links = [...document.querySelectorAll('.nav-links a')];
-    const sections = [...document.querySelectorAll('section[id]')];
+
+    const links = [
+      ...document.querySelectorAll('.nav-links a')
+    ];
+
+    const sections = [
+      ...document.querySelectorAll('section[id]')
+    ];
 
     function closeMenu() {
+
       navLinks.classList.remove('open');
+
       document.body.classList.remove('menu-open');
-      navToggle.setAttribute('aria-expanded', 'false');
+
+      navToggle.setAttribute(
+        'aria-expanded',
+        'false'
+      );
+
       navToggle.textContent = '☰';
+
     }
 
     navToggle.addEventListener('click', () => {
-      const open = navLinks.classList.toggle('open');
-      document.body.classList.toggle('menu-open', open);
-      navToggle.setAttribute('aria-expanded', String(open));
-      navToggle.textContent = open ? '×' : '☰';
+
+      const open =
+        navLinks.classList.toggle('open');
+
+      document.body.classList.toggle(
+        'menu-open',
+        open
+      );
+
+      navToggle.setAttribute(
+        'aria-expanded',
+        String(open)
+      );
+
+      navToggle.textContent =
+        open ? '×' : '☰';
+
     });
 
-    links.forEach(link => link.addEventListener('click', closeMenu));
+    links.forEach(link =>
+      link.addEventListener(
+        'click',
+        closeMenu
+      )
+    );
 
-    window.addEventListener('scroll', () => {
-      nav.classList.toggle('scrolled', window.scrollY > 10);
-    }, { passive: true });
+    window.addEventListener(
+      'scroll',
+      () => {
 
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          revealObserver.unobserve(entry.target);
+        nav.classList.toggle(
+          'scrolled',
+          window.scrollY > 10
+        );
+
+      },
+      {
+        passive: true
+      }
+    );
+
+    const revealObserver =
+      new IntersectionObserver(
+        (entries) => {
+
+          entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+              entry.target.classList.add(
+                'visible'
+              );
+
+              revealObserver.unobserve(
+                entry.target
+              );
+
+            }
+
+          });
+
+        },
+        {
+          threshold: .08,
+          rootMargin:
+            '0px 0px -35px 0px'
         }
+      );
+
+    document
+      .querySelectorAll(
+        'section, .hero-actions, .badge, .project-card'
+      )
+      .forEach((el, i) => {
+
+        el.classList.add('reveal');
+
+        el.style.transitionDelay =
+          `${Math.min((i % 6) * 35, 180)}ms`;
+
+        revealObserver.observe(el);
+
       });
-    }, {
-      threshold: .08,
-      rootMargin: '0px 0px -35px 0px'
-    });
 
-    document.querySelectorAll('section, .hero-actions, .badge, .project-card').forEach((el, i) => {
-      el.classList.add('reveal');
-      el.style.transitionDelay = `${Math.min((i % 6) * 35, 180)}ms`;
-      revealObserver.observe(el);
-    });
+    const sectionObserver =
+      new IntersectionObserver(
+        (entries) => {
 
-    const sectionObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          links.forEach(link => link.classList.remove('active'));
-          const active = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
-          if (active) {
-            active.classList.add('active');
+          entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+              links.forEach(link =>
+                link.classList.remove(
+                  'active'
+                )
+              );
+
+              const active =
+                document.querySelector(
+                  `.nav-links a[href="#${entry.target.id}"]`
+                );
+
+              if (active) {
+                active.classList.add(
+                  'active'
+                );
+              }
+
+            }
+
+          });
+
+        },
+        {
+          rootMargin:
+            '-35% 0px -55% 0px',
+          threshold: 0
+        }
+      );
+
+    sections.forEach(section =>
+      sectionObserver.observe(section)
+    );
+
+    window.addEventListener(
+      'resize',
+      () => {
+
+        if (window.innerWidth > 720) {
+          closeMenu();
+        }
+
+      }
+    );
+
+    /* ── Project Carousels ── */
+
+    document
+      .querySelectorAll('.project-thumb')
+      .forEach(thumb => {
+
+        const container =
+          thumb.querySelector(
+            '.project-images'
+          );
+
+        if (!container) return;
+
+        const images =
+          container.querySelectorAll('img');
+
+        if (images.length <= 1) return;
+
+        const prevBtn =
+          document.createElement('button');
+
+        prevBtn.className =
+          'carousel-btn carousel-prev';
+
+        prevBtn.setAttribute(
+          'aria-label',
+          'Previous image'
+        );
+
+        prevBtn.innerHTML = '‹';
+
+        const nextBtn =
+          document.createElement('button');
+
+        nextBtn.className =
+          'carousel-btn carousel-next';
+
+        nextBtn.setAttribute(
+          'aria-label',
+          'Next image'
+        );
+
+        nextBtn.innerHTML = '›';
+
+        const dotsContainer =
+          document.createElement('div');
+
+        dotsContainer.className =
+          'carousel-dots';
+
+        const dots = [];
+
+        images.forEach((_, idx) => {
+
+          const dot =
+            document.createElement('span');
+
+          dot.className =
+            'dot-indicator' +
+            (idx === 0 ? ' active' : '');
+
+          dot.addEventListener(
+            'click',
+            (e) => {
+
+              e.stopPropagation();
+
+              container.scrollTo({
+                left:
+                  idx *
+                  container.clientWidth,
+                behavior: 'smooth'
+              });
+
+            }
+          );
+
+          dotsContainer.appendChild(dot);
+
+          dots.push(dot);
+
+        });
+
+        prevBtn.addEventListener(
+          'click',
+          (e) => {
+
+            e.stopPropagation();
+
+            container.scrollBy({
+              left:
+                -container.clientWidth,
+              behavior: 'smooth'
+            });
+
           }
+        );
+
+        nextBtn.addEventListener(
+          'click',
+          (e) => {
+
+            e.stopPropagation();
+
+            container.scrollBy({
+              left:
+                container.clientWidth,
+              behavior: 'smooth'
+            });
+
+          }
+        );
+
+        container.addEventListener(
+          'scroll',
+          () => {
+
+            const activeIdx =
+              Math.round(
+                container.scrollLeft /
+                container.clientWidth
+              );
+
+            dots.forEach((dot, i) => {
+
+              dot.classList.toggle(
+                'active',
+                i === activeIdx
+              );
+
+            });
+
+          },
+          {
+            passive: true
+          }
+        );
+
+        thumb.appendChild(prevBtn);
+        thumb.appendChild(nextBtn);
+        thumb.appendChild(dotsContainer);
+
+      });
+
+    document.addEventListener(
+      'keydown',
+      e => {
+
+        if (e.key === 'Escape') {
+          closeMenu();
         }
-      });
-    }, {
-      rootMargin: '-35% 0px -55% 0px',
-      threshold: 0
-    });
 
-    sections.forEach(section => sectionObserver.observe(section));
-
-    window.addEventListener('resize', () => {
-      if (window.innerWidth > 720) {
-        closeMenu();
       }
-    });
+    );
 
-    // Initialize project carousels (Dot Pagination + Navigation Arrows)
-    document.querySelectorAll('.project-thumb').forEach(thumb => {
-      const container = thumb.querySelector('.project-images');
-      if (!container) return;
-      const images = container.querySelectorAll('img');
-      if (images.length <= 1) return;
-
-      const prevBtn = document.createElement('button');
-      prevBtn.className = 'carousel-btn carousel-prev';
-      prevBtn.setAttribute('aria-label', 'Previous image');
-      prevBtn.innerHTML = '‹';
-
-      const nextBtn = document.createElement('button');
-      nextBtn.className = 'carousel-btn carousel-next';
-      nextBtn.setAttribute('aria-label', 'Next image');
-      nextBtn.innerHTML = '›';
-
-      const dotsContainer = document.createElement('div');
-      dotsContainer.className = 'carousel-dots';
-
-      const dots = [];
-      images.forEach((_, idx) => {
-        const dot = document.createElement('span');
-        dot.className = 'dot-indicator' + (idx === 0 ? ' active' : '');
-        dot.addEventListener('click', (e) => {
-          e.stopPropagation();
-          container.scrollTo({ left: idx * container.clientWidth, behavior: 'smooth' });
-        });
-        dotsContainer.appendChild(dot);
-        dots.push(dot);
-      });
-
-      prevBtn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        container.scrollBy({ left: -container.clientWidth, behavior: 'smooth' });
-      });
-
-      nextBtn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        container.scrollBy({ left: container.clientWidth, behavior: 'smooth' });
-      });
-
-      container.addEventListener('scroll', () => {
-        const activeIdx = Math.round(container.scrollLeft / container.clientWidth);
-        dots.forEach((dot, i) => {
-          dot.classList.toggle('active', i === activeIdx);
-        });
-      }, { passive: true });
-
-      thumb.appendChild(prevBtn);
-      thumb.appendChild(nextBtn);
-      thumb.appendChild(dotsContainer);
-    });
-
-    document.addEventListener('keydown', e => {
-      if (e.key === 'Escape') {
-        closeMenu();
-      }
-    });
   </script>
+
 </body>
 
 </html>
+
